@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fase 2</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="https://bootswatch.com/5/cosmo/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+    <style>
+        .h1-title{
+            color: #45505B;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pading-sections{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .bg-color-int{
+          background-color: #37517E;
+        }
+
+        .text-h3{
+          color: #AFB9CB;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bg-oscuro{
+          background-color: #F3F5FA;
+        }
+        .h1-theme{
+          color: #37517E;
+        }
+        .h3-theme{
+          color: #728394;
+        }
+        .p-contet{
+          text-align: justify;
+        }
+
+        .navbar.center .navbar-inner {
+          text-align: center;
+        }
+
+        .navbar.center .navbar-inner .nav {
+          display:inline-block;
+          float: none;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Body -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-color-int" style="padding-top: 20px; padding-bottom: 20px">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item text-center">
+                <a class="nav-link active" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#tema">Tema seleccionado</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#mockup">Mockup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#acerca">Acerca de</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-color-int">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01" >
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#inicio">Inicio
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#tema">Tema Seleccionado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#mockup">Mockup</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#acerca">Acerda de</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+    </header>
+    <div class="bg-color-int pading-sections" id="inicio">
+      <h1 class="text-center text-white"> <strong> Fase 2 - Componente práctico - Prácticas simuladas </strong></h1>
+      <h3 class="text-h3 text-center">Daniel Pérez Arango </h3>
+    </div>
+
+    <section class="bg-oscuro pading-sections" id="tema">
+      <h1 class="text-center h1-theme"> <strong> Tema Seleccionado </strong> </h1>
+      <h3 class="text-center h1-theme"> <strong> Media Queries  </strong> </h3>
+      <div class="container">
+
+        <div class="row" style="margin-top: 40px;">
+          <div class="col-lg-5">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <strong style="color:#47B2E4"> Índice </strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol>
+                      <a href="#queson"> <li>¿ Qué son las de Media Queries ? </li></a>
+                      <li>
+                        <a href="#conceptos"> Conceptos Fundamentales </a>
+                        <ul>
+                          <li>
+                            <a href="#con1"> 1. Puntos de quiebre (breakpoints)</a>
+                          </li>
+                          <li>
+                            <a href="#con2"> 2. Características del dispositivo</a>
+                          </li>
+                          <li>
+                            <a href="#con3"> 3. Operadores lógicos</a>
+                          </li>
+                          <li>
+                            <a href="#con4"> 4. Reglas de estilo condicionales</a>
+                          </li>
+                          <li>
+                            <a href="#con5"> 5. Móvil primero (mobile first)</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#ejemplos"> Ejemplos de Media Queries </a>
+                        <ul>
+                          <li>
+                            <a href="#ejemplo1"> 1. Cambiar el tamaño de fuente en dispositivos móviles </a>
+                          </li>
+                          <li>
+                            <a href="#ejemplo2"> 2. Ocultar elementos en dispositivos pequeños </a>
+                          </li>
+                          <li>
+                            <a href="#ejemplo3"> 3. Cambiar el diseño en dispositivos grandes </a>
+                          </li>
+                          <li>
+                            <a href="#ejemplo4"> 4. Cambiar el fondo en dispositivos con pantalla Retina </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7"></div>
+        </div>
+
+        <div class="row" style="margin-top: 40px;">
+          <div class="col-lg-12"> 
+            <div id="queson">
+              <h4> 
+                <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> ¿ Qué son las de Media Queries ?
+              </h4>
+              <p class="p-contet">
+                Las Media Queries son una técnica de diseño web que permite adaptar el contenido y la apariencia de una página web según las características del dispositivo que se está utilizando para visualizarla, como la resolución de pantalla, el tamaño de la ventana del navegador, la orientación del dispositivo, entre otros.
+              </p>
+              <p class="p-contet">
+                Las Media Queries se utilizan en conjunto con las hojas de estilo en cascada (CSS) para definir reglas de estilo condicionales que se aplican únicamente cuando se cumplen ciertas condiciones. Para ello, se utiliza la sintaxis @media seguida de una serie de parámetros que definen las características del dispositivo o navegador.
+              </p>
+            </div>
+
+            <div style="margin-top: 40px;" id="conceptos">
+              <h4> 
+                <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> Conceptos Fundamentales 
+              </h4>
+              <p class="p-contet">
+                A continuación, se presentan los conceptos fundamentales de las Media Queries:
+              </p>
+              <p class="p-contet" id="con1">
+                1.	<b>Puntos de quiebre (breakpoints):</b> Son los valores de las características del dispositivo que se utilizan como referencia para aplicar las reglas de estilo condicionales. Por ejemplo, se puede definir un punto de quiebre para una resolución de pantalla de 768 píxeles, de modo que cuando la pantalla tenga esa resolución o menor, se apliquen ciertas reglas de estilo.
+              </p>
+              <p class="p-contet" id="con2">
+                2.	<b>Características del dispositivo:</b> Las características que se utilizan como referencia en las Media Queries pueden ser diversas, tales como la resolución de pantalla, el ancho y alto de la ventana del navegador, la orientación del dispositivo (horizontal o vertical), la densidad de píxeles, la capacidad de color, entre otras.
+              </p>
+              <p class="p-contet" id="con3">
+                3.	<b>Operadores lógicos:</b> Se utilizan para combinar varias características del dispositivo en una sola Media Query. Los operadores más comunes son AND (y), OR (o) y NOT (no).
+              </p>
+              <p class="p-contet" id="con4">
+                4.	<b>Reglas de estilo condicionales:</b> Son las reglas de estilo que se aplican únicamente cuando se cumple una condición definida en una Media Query. Por ejemplo, se puede definir una regla de estilo que cambie el tamaño del texto cuando la resolución de pantalla sea menor a 768 píxeles.
+              </p>
+              <p class="p-contet" id="con5">
+                5.	<b>Móvil primero (mobile first):</b> Es una estrategia de diseño que se basa en definir primero las reglas de estilo para dispositivos móviles y luego, mediante Media Queries, agregar reglas de estilo para dispositivos de mayor tamaño. Esta estrategia se basa en el hecho de que cada vez son más los usuarios que acceden a internet desde dispositivos móviles.
+              </p>
+            </div>
+
+            <div style="margin-top: 40px;" id="ejemplos">
+              <h4> 
+                <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> Ejemplos de Media Queries 
+              </h4>
+              <div id="ejemplo1">
+              <p class="p-contet">
+                <b>1. Cambiar el tamaño de fuente en dispositivos móviles:</b>
+                En este ejemplo, se utiliza la Media Query para definir una regla de estilo que se aplicará solamente cuando la pantalla tenga una anchura máxima de 480 píxeles. En este caso, se cambia el tamaño de fuente del texto a 16 píxeles.
+              </p>
+
+              <p>
+                <code>
+                  @media screen and (max-width: 480px) {
+                    body {
+                      font-size: 16px;
+                    }
+                  }
+                </code>
+              </p>
+            </div>
+              <hr>
+
+              <div id="ejemplo2">
+                <p class="p-contet">
+                  <b>2. Ocultar elementos en dispositivos pequeños:</b>
+                  En este ejemplo, se utiliza la Media Query para definir una regla de estilo que se aplicará solamente cuando la pantalla tenga una anchura máxima de 768 píxeles. En este caso, se oculta la barra lateral del sitio web.
+                </p>
+  
+                <p>
+                  <code>
+                    @media screen and (max-width: 768px) {
+                      .sidebar {
+                        display: none;
+                      }
+                    }                    
+                  </code>
+                </p>
+              </div>
+              <hr>
+
+              <div id="ejemplo3">
+                <p class="p-contet">
+                  <b>3. Cambiar el diseño en dispositivos grandes:</b>
+                  En este ejemplo, se utiliza la Media Query para definir una regla de estilo que se aplicará solamente cuando la pantalla tenga una anchura mínima de 1024 píxeles. En este caso, se cambia el diseño del sitio web, dividiendo el contenido principal en un 70% y la barra lateral en un 30% del ancho de la página.
+                </p>
+  
+                <p>
+                  <code>
+                    @media screen and (min-width: 1024px) {
+                      .content {
+                        width: 70%;
+                        float: left;
+                      }
+                      .sidebar {
+                        width: 30%;
+                        float: right;
+                      }
+                    }                                     
+                  </code>
+                </p>
+              </div>
+              <hr>
+
+              <div id="ejemplo4">
+                <p class="p-contet">
+                  <b>4. Cambiar el fondo en dispositivos con pantalla Retina:</b>
+                  En este ejemplo, se utiliza la Media Query para definir una regla de estilo que se aplicará solamente en dispositivos con una densidad de píxeles mayor a 1 (pantallas Retina). En este caso, se cambia el fondo del sitio web por una imagen con una resolución doble.
+                </p>
+  
+                <p>
+                  <code>
+                    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+                      body {
+                        background-image: url("background@2x.png");
+                      }
+                    }                                                     
+                  </code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-white pading-sections" id="mockup">
+      <h1 class="text-center h1-theme"> <strong> Mockup </strong> </h1>
+      <div class="container text-center">
+        <img src="./assets/images/mockup_1.png" class="img-fluid" alt="Mockup 1">
+        <img src="./assets/images/mockup_2.png" class="img-fluid" alt="Mockup 2">
+      </div>
+    </section>
+    <section class="bg-oscuro pading-sections" id="acerca">
+      <h1 class="text-center h1-theme"> <strong> Acerca de </strong> </h1>
+      <p class="container">
+        Identificar los conceptos relacionados con los fundamentos de diseño web a partir de la concepción de un sitio para su aplicación adecuada en el contexto de un proyecto.
+      </p>
+
+      <h3 class="text-center h3-theme"> <b> Fase 2 - Componente práctico - Prácticas simuladas </b> </h3>
+
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="container>
+            <li class="list-group-item"> <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> <b> Nombre: </b> Daniel Pérez Arango </li>
+            <li class="list-group-item"> <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> <b> Programa: </b> </li>
+            <li class="list-group-item"> <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> <b> Correo: </b> dperezara@unadvirtual.edu.co </li>
+            <li class="list-group-item"> <i class="fi fi-rs-angle-double-small-right" style="color: #47B2E4;"></i> <b> Tutor: </b> Mario Luis Ávila Pérez </li>
+          </div>
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
+      
+    </section>
+
+
+    <footer class="bg-color-int" style="padding-top: 30px; padding-bottom: 20px;">
+      <section class="footer">
+          <p class="text-white text-center"> &copy; Copyright - Daniel Pérez Arango - 22 de febrero del 2023</p>
+      </section>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
